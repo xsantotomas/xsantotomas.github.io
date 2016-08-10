@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar" lang="es-ES"><!--<![endif]--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Plugins ‹ Crowd-Dreaming — WordPress</title>
+
+
+<script type="text/javascript">
+  document.write=function() {};
+  document.writeln=function() {};
+</script>
+
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/wp-admin/admin-ajax.php',
+	pagenow = 'plugins',
+	typenow = '',
+	adminpage = 'plugins-php',
+	thousandsSeparator = '.',
+	decimalPoint = ',',
+	isRtl = 0;
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" href="http://www.crowd-dreaming.com/wp-admin/load-styles.php?c=1&dir=ltr&load=dashicons,admin-bar,wp-color-picker,wp-admin,buttons,wp-auth-check&ver=4.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="toolset-font-awesome-css" href="../wp-content/plugins/sitepress-multilingual-cms/res/css/font-awesome.min-ver=3.2.7.css" type="text/css" media="all">
+<link rel="stylesheet" id="installer-admin-css" href="../wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/css/admin-ver=1.6.4.css" type="text/css" media="all">
+<link rel="stylesheet" id="open-sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&subset=latin%2Clatin-ext&ver=4.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="fusion-popup-css" href="../wp-content/plugins/fusion-core/tinymce/css/popup-ver=1.0.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery.chosen-css" href="../wp-content/plugins/fusion-core/tinymce/css/chosen-ver=1.0.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="../wp-content/plugins/fusion-core/tinymce/css/font-awesome-ver=3.2.1.css" type="text/css" media="all">
+<link rel="stylesheet" id="thickbox-css" href="../wp-includes/js/thickbox/thickbox-ver=4.3.1.css" type="text/css" media="all">
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='ie-css'  href='http://www.crowd-dreaming.com/wp-admin/css/ie.min.css?ver=4.3.1' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="layerslider_global_css-css" href="../wp-content/themes/Avada/framework/plugins/LayerSlider/css/global-ver=4.6.5.css" type="text/css" media="all">
+<link rel="stylesheet" id="wooslider-global-css" href="../wp-content/themes/Avada/framework/plugins/tf-flexslider/assets/css/global-ver=1.0.6.css" type="text/css" media="screen">
+<link rel="stylesheet" id="wprc_style-css" href="../wp-content/plugins/installer/assets/css/wprc-ver=4.3.1.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery_ui_theme-css" href="../wp-content/plugins/installer/assets/scripts/jquery_ui/themes/smoothness/jquery-ui-1.9.2.custom.min-ver=4.3.1.css" type="text/css" media="all">
+<link rel="stylesheet" id="thickbox.css-css" href="../wp-includes/js/thickbox/thickbox-ver=1.0.css" type="text/css" media="all">
+<link rel="stylesheet" id="sitepress-style-css" href="../wp-content/plugins/sitepress-multilingual-cms/res/css/style-ver=3.2.7.css" type="text/css" media="all">
+<link rel="stylesheet" id="translate-taxonomy-css" href="../wp-content/plugins/sitepress-multilingual-cms/res/css/taxonomy-translation-ver=3.2.7.css" type="text/css" media="all">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.crowd-dreaming.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+					<script>
+				function add_sidebar( sidebar_name )
+				{
+
+					var mysack = new sack("http://www.crowd-dreaming.com/wp-admin/admin-ajax.php" );
+
+				  	mysack.execute = 1;
+				  	mysack.method = 'POST';
+				  	mysack.setVar( "action", "add_sidebar" );
+				  	mysack.setVar( "sidebar_name", sidebar_name );
+				  	mysack.encVar( "cookie", document.cookie, false );
+				  	mysack.onError = function() { alert('Ajax error. Cannot add sidebar' )};
+				  	mysack.runAJAX();
+					return true;
+				}
+
+				function remove_sidebar( sidebar_name,num )
+				{
+
+					var mysack = new sack("http://www.crowd-dreaming.com/wp-admin/admin-ajax.php" );
+
+				  	mysack.execute = 1;
+				  	mysack.method = 'POST';
+				  	mysack.setVar( "action", "remove_sidebar" );
+				  	mysack.setVar( "sidebar_name", sidebar_name );
+				  	mysack.setVar( "row_number", num );
+				  	mysack.encVar( "cookie", document.cookie, false );
+				  	mysack.onError = function() { alert('Ajax error. Cannot add sidebar' )};
+				  	mysack.runAJAX();
+					//alert('hi!:::'+sidebar_name);
+					return true;
+				}
+			</script>
+				<script type="text/javascript">
+			// <![CDATA[
+			var icl_ajx_url;
+			icl_ajx_url = 'http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/languages.php';
+			var icl_ajx_saved = 'Datos guardados';
+			var icl_ajx_error = 'Error: los datos no se han guardado';
+			var icl_default_mark = 'predeterminado';
+			var icl_this_lang = 'es';
+			var icl_ajxloaderimg_src = 'http://www.crowd-dreaming.com/wp-content/plugins/sitepress-multilingual-cms/res/img/ajax-loader.gif';
+			var icl_cat_adder_msg = 'Para agregar categorías que ya existen en otros idiomas, diríjase a la <a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=category">página de administración de categorías</a>.';
+			// ]]>
+
+					</script>
+		<script type="text/javascript">
+            var wprcLang = { 
+                'please_check_the_option' : 'Please check the option','please_check_the_problem_themes' : 'Please check the problem themes','please_check_the_problem_plugins' : 'Please check the problem plugins','select_plugins' : 'Select plugins','select_themes' : 'Select themes','please_check_the_child_option' : 'Please check the child option','warning' : 'Warning','enter_repository_name' : 'Enter repository name please','enter_repository_endpoint_url' : 'Enter repository end point url please','select_repositories' : 'Select repositories','search_in_N_repositories' : 'Search in # repositories','free' : 'Free','paid' : 'Paid','search_free_or_paid_plugins' : 'Search plugins (Free or Paid)','search_free_plugins' : 'Search Free plugins','search_paid_plugins' : 'Search Paid plugins','search_free_and_paid_plugins' : 'Search Free & Paid plugins','search_free_or_paid_themes' : 'Search themes (Free or Paid)','search_free_themes' : 'Search Free themes','search_paid_themes' : 'Search Paid themes','search_free_and_paid_themes' : 'Search Free & Paid themes','clear_cache' : 'Clear cache','repository_have_N_types' : 'Repository has # type(-s)','select_extension_types' : 'Choose repository types','choose_repository_types' : 'Choose repository types please','check_compatibility_of_the_theme' : 'Check compatibility status for the theme' 
+            };
+        </script><script type="text/javascript">
+/* <![CDATA[ */
+var installer_strings = {"installing":"Installing %s","updating":"Updating %s","activating":"Activating %s"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wprc_config = {"DEBUG":"false","TIMEOUT":"50000","unknown_error":"Unknown Error","timeout_error":"Connection Timeout","d_ext_updated_msg":"%d extension(s) were updated","no_ext_updated_msg":"No extensions updated, probably up to date","login_cleared":"Username and Password were reset","login_cleared_failed":"Username and Password reset Failed","login_clear_confirm":"Are you sure you want to reset the login details to %s repository? Use that only when you need to change the login details"};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var FusionShortcodes = {"plugin_folder":"http:\/\/www.crowd-dreaming.com\/wp-content\/plugins\/fusion-core","dev":"false"};var userSettings = {"url":"\/","uid":"1","time":"1444750524","secure":""};var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};var _wpUpdatesSettings = {"ajax_nonce":"e8c1d6d3a1","l10n":{"updating":"Actualizando...","updated":"\u00a1Actualizado!","updateFailed":"Error en la actualizaci\u00f3n: %s","updatingLabel":"Actualizando %s...","updatedLabel":"\u00a1%s actualizado!","updateFailedLabel":"La actualizaci\u00f3n de %s fall\u00f3.","updatingMsg":"Actualizando... por favor, espera.","updatedMsg":"Actualizaci\u00f3n completada correctamente.","updateCancel":"Actualizaci\u00f3n cancelada.","beforeunload":"Las actualizaci\u00f3n de los plugins podr\u00edan no completarse si navegas fuera de esta p\u00e1gina."}};/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.crowd-dreaming.com/wp-admin/load-scripts.php?c=1&load%5B%5D=jquery-core,jquery-migrate,utils,jquery-ui-core,jquery-ui-widget,underscore,wp-util,wp-a11y,updates,jquery-ui-button&ver=4.3.1"></script>
+<script type="text/javascript" src="../wp-content/plugins/sitepress-multilingual-cms/res/js/scripts-ver=3.2.7.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/js/admin-ver=1.6.4.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/fusion-core/tinymce/js/jquery.livequery-ver=1.1.1.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/fusion-core/tinymce/js/jquery.appendo-ver=1.0.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/fusion-core/tinymce/js/base64-ver=1.0.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/fusion-core/tinymce/js/chosen.jquery.min-ver=1.0.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/fusion-core/tinymce/js/popup-ver=1.0.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/installer/assets/js/sprintf-0.7-beta1.min-ver=4.3.1.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/installer/assets/js/wprc-ver=4.3.1.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/installer/assets/scripts/multiselect/jquery.installer-multiselect-ver=4.3.1.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/sitepress-multilingual-cms/res/js/icl-admin-notifier-ver=3.2.7.js"></script>
+		<script type="text/javascript">
+			var revslider_shortcodes = ['[rev_slider HomeSlider1]'];
+		</script>
+		    <script type="text/javascript">
+    jQuery(function(){
+
+        var message = '<p>This theme comes with an <a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=optionsframework">options panel</a> to configure settings. This theme also supports widgets, please visit the <a href="http://www.crowd-dreaming.com/wp-admin/widgets.php">widgets settings page</a> to configure them.</p>';
+    	jQuery('.themes-php #message2').html(message);
+
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../wp-content/themes/Avada/css/admin_shortcodes.css"><style type="text/css">.widget input { border-color: #DFDFDF !important; }
+	</style>		<script type="text/javascript">
+			/* <![CDATA[*/
+			jQuery(document).ready(function() {
+				jQuery('a.wprc-admin-message-hide').live('click',function(event) {
+					event.preventDefault();
+					jQuery.post(
+						ajaxurl,
+						{
+							action:'wprc-hide-admin-message',
+							'wprc-admin-message-id':jQuery(this).parent().parent().attr('id')
+						},
+						function(response) {
+						}
+					);
+					jQuery(this).parent().parent().fadeOut();
+				});
+				jQuery('a.wprc-admin-message-link').live('click',function(event) {
+					event.preventDefault();
+					jQuery.post(
+						ajaxurl,
+						{
+							action:'wprc-hide-admin-message',
+							'wprc-admin-message-id':jQuery(this).parent().parent().attr('id')
+						},
+						function(response) {
+						}
+					);
+				});
+			});
+			/*]]>*/
+		</script>
+			<link id="wp-admin-canonical" rel="canonical" href="plugins.php.html">
+	<script>
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( 'wp-admin-canonical' ).href + window.location.hash );
+		}
+	</script>
+<script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#999","focus":"#00a0d2","current":"#fff"}};</script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style id="iris-css">.iris-picker{display:block;position:relative}.iris-picker,.iris-picker *{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input+.iris-picker{margin-top:4px}.iris-error{background-color:#ffafaf}.iris-border{border-radius:3px;border:1px solid #aaa;width:200px;background-color:#fff}.iris-picker-inner{position:absolute;top:0;right:0;left:0;bottom:0}.iris-border .iris-picker-inner{top:10px;right:10px;left:10px;bottom:10px}.iris-picker .iris-square-inner{position:absolute;left:0;right:0;top:0;bottom:0}.iris-picker .iris-square,.iris-picker .iris-slider,.iris-picker .iris-square-inner,.iris-picker .iris-palette{border-radius:3px;box-shadow:inset 0 0 5px rgba(0,0,0,.4);height:100%;width:12.5%;float:left;margin-right:5%}.iris-picker .iris-square{width:76%;margin-right:10%;position:relative}.iris-picker .iris-square-inner{width:auto;margin:0}.iris-ie-9 .iris-square,.iris-ie-9 .iris-slider,.iris-ie-9 .iris-square-inner,.iris-ie-9 .iris-palette{box-shadow:none;border-radius:0}.iris-ie-9 .iris-square,.iris-ie-9 .iris-slider,.iris-ie-9 .iris-palette{outline:1px solid rgba(0,0,0,.1)}.iris-ie-lt9 .iris-square,.iris-ie-lt9 .iris-slider,.iris-ie-lt9 .iris-square-inner,.iris-ie-lt9 .iris-palette{outline:1px solid #aaa}.iris-ie-lt9 .iris-square .ui-slider-handle{outline:1px solid #aaa;background-color:#fff;-ms-filter:"alpha(Opacity=30)"}.iris-ie-lt9 .iris-square .iris-square-handle{background:0;border:3px solid #fff;-ms-filter:"alpha(Opacity=50)"}.iris-picker .iris-strip{margin-right:0;position:relative}.iris-picker .iris-strip .ui-slider-handle{position:absolute;background:0;margin:0;right:-3px;left:-3px;border:4px solid #aaa;border-width:4px 3px;width:auto;height:6px;border-radius:4px;box-shadow:0 1px 2px rgba(0,0,0,.2);opacity:.9;z-index:5;cursor:ns-resize}.iris-strip .ui-slider-handle:before{content:" ";position:absolute;left:-2px;right:-2px;top:-3px;bottom:-3px;border:2px solid #fff;border-radius:3px}.iris-picker .iris-slider-offset{position:absolute;top:11px;left:0;right:0;bottom:-3px;width:auto;height:auto;background:transparent;border:0;border-radius:0}.iris-picker .iris-square-handle{background:transparent;border:5px solid #aaa;border-radius:50%;border-color:rgba(128,128,128,.5);box-shadow:none;width:12px;height:12px;position:absolute;left:-10px;top:-10px;cursor:move;opacity:1;z-index:10}.iris-picker .ui-state-focus .iris-square-handle{opacity:.8}.iris-picker .iris-square-handle:hover{border-color:#999}.iris-picker .iris-square-value:focus .iris-square-handle{box-shadow:0 0 2px rgba(0,0,0,.75);opacity:.8}.iris-picker .iris-square-handle:hover::after{border-color:#fff}.iris-picker .iris-square-handle::after{position:absolute;bottom:-4px;right:-4px;left:-4px;top:-4px;border:3px solid #f9f9f9;border-color:rgba(255,255,255,.8);border-radius:50%;content:" "}.iris-picker .iris-square-value{width:8px;height:8px;position:absolute}.iris-ie-lt9 .iris-square-value,.iris-mozilla .iris-square-value{width:1px;height:1px}.iris-palette-container{position:absolute;bottom:0;left:0;margin:0;padding:0}.iris-border .iris-palette-container{left:10px;bottom:10px}.iris-picker .iris-palette{margin:0;cursor:pointer}.iris-square-handle,.ui-slider-handle{border:0;outline:0}</style></head>
+<body class="wp-admin wp-core-ui js  plugins-php auto-fold admin-bar branch-4-3 version-4-3-1 admin-color-fresh locale-es-es customize-support svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+	
+<div id="wpwrap">
+
+<div id="adminmenumain" role="navigation" aria-label="Menú principal">
+<a href="plugins.php.html#wpbody-content" class="screen-reader-shortcut">Saltar al contenido principal</a>
+<a href="plugins.php.html#wp-toolbar" class="screen-reader-shortcut">Abrir la barra de herramientas</a>
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap" style="">
+<ul id="adminmenu">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" id="menu-dashboard">
+	<a href="http://www.crowd-dreaming.com/wp-admin/index.php" class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-dashboard"><br></div><div class="wp-menu-name">Escritorio</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Escritorio</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/index.php" class="wp-first-item">Inicio</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/update-core.php">Actualizaciones <span class="update-plugins count-0" title=""><span class="update-count">0</span></span></a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" id="menu-posts">
+	<a href="http://www.crowd-dreaming.com/wp-admin/edit.php" class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-post"><br></div><div class="wp-menu-name">Entradas</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Entradas</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/edit.php" class="wp-first-item">Todas las entradas</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/post-new.php">Añadir nueva</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=category">Categorías</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=post_tag">Etiquetas</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href="http://www.crowd-dreaming.com/wp-admin/upload.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-media"><br></div><div class="wp-menu-name">Medios</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Medios</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/upload.php" class="wp-first-item">Biblioteca</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/media-new.php">Añadir nuevo</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=page" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-page"><br></div><div class="wp-menu-name">Páginas</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Páginas</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=page" class="wp-first-item">Todas las páginas</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=page">Añadir nueva</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments" id="menu-comments">
+	<a href="http://www.crowd-dreaming.com/wp-admin/edit-comments.php" class="wp-not-current-submenu menu-top menu-icon-comments"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-comments"><br></div><div class="wp-menu-name">Comentarios <span class="awaiting-mod count-0"><span class="pending-count">0</span></span></div></a></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post" id="menu-posts-avada_portfolio">
+	<a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=avada_portfolio" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-post"><br></div><div class="wp-menu-name">Portfolio</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Portfolio</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=avada_portfolio" class="wp-first-item">Portfolio</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=avada_portfolio">Añadir nueva</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=portfolio_category&post_type=avada_portfolio">Categories</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=portfolio_skills&post_type=avada_portfolio">Skills</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=portfolio_tags&post_type=avada_portfolio">Tags</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post menu-top-last" id="menu-posts-avada_faq">
+	<a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=avada_faq" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-post"><br></div><div class="wp-menu-name">FAQs</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">FAQs</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=avada_faq" class="wp-first-item">FAQs</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=avada_faq">Añadir nueva</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=faq_category&post_type=avada_faq">Categories</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<a href="http://www.crowd-dreaming.com/wp-admin/themes.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-appearance"><br></div><div class="wp-menu-name">Apariencia</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Apariencia</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/themes.php" class="wp-first-item">Temas</a></li><li class="hide-if-no-customize"><a href="http://www.crowd-dreaming.com/wp-admin/customize.php?return=%2Fwp-admin%2Fplugins.php" class="hide-if-no-customize">Personalizar</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/widgets.php">Widgets</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/nav-menus.php">Menús</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/themes.php?page=optionsframework">Theme Options</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/themes.php?page=multiple_sidebars">Sidebars</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/theme-editor.php">Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-plugins" id="menu-plugins">
+	<a href="plugins.php.html" class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-plugins"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-plugins"><br></div><div class="wp-menu-name">Plugins <span class="update-plugins count-0"><span class="plugin-count">0</span></span></div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Plugins <span class="update-plugins count-0"><span class="plugin-count">0</span></span></li><li class="wp-first-item current"><a href="plugins.php.html" class="wp-first-item current">Plugins instalados</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/plugin-install.php">Añadir nuevo</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/plugin-editor.php">Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href="http://www.crowd-dreaming.com/wp-admin/users.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-users"><br></div><div class="wp-menu-name">Usuarios</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Usuarios</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/users.php" class="wp-first-item">Todos los usuarios</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/user-new.php">Añadir nuevo</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/profile.php">Tu perfil</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href="http://www.crowd-dreaming.com/wp-admin/tools.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-tools"><br></div><div class="wp-menu-name">Herramientas</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Herramientas</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/tools.php" class="wp-first-item">Herramientas disponibles</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/import.php">Importar</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/export.php">Exportar</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<a href="http://www.crowd-dreaming.com/wp-admin/options-general.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-settings"><br></div><div class="wp-menu-name">Ajustes</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Ajustes</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/options-general.php" class="wp-first-item">Generales</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/options-writing.php">Escritura</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/options-reading.php">Lectura</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/options-discussion.php">Comentarios</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/options-media.php">Medios</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/options-permalink.php">Enlaces permanentes</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=installer/pages/repositories.php">Repositories</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=installer/pages/installer.php">Instalador</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=updraftplus">Respaldos UpdraftPlus</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post menu-top-first" id="menu-posts-themefusion_elastic">
+	<a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=themefusion_elastic" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-post"><br></div><div class="wp-menu-name">Elastic Slider</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">Elastic Slider</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=themefusion_elastic" class="wp-first-item">Elastic Slider</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=themefusion_elastic">Añadir nueva</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=themefusion_es_groups&post_type=themefusion_elastic">Groups</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-slide" id="menu-posts-slide">
+	<a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=slide" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-slide" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before"><img src="../wp-content/themes/Avada/framework/plugins/tf-flexslider/assets/images/icon_slide_16.png" alt=""></div><div class="wp-menu-name">FlexSlider</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">FlexSlider</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=slide" class="wp-first-item">All Slides</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=slide">Add New Slide</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit-tags.php?taxonomy=slide-page&post_type=slide">Slide Groups</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/edit.php?post_type=slide&page=wooslider-settings">Settings</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-generic toplevel_page_revslider" id="toplevel_page_revslider">
+	<a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=revslider" class="wp-not-current-submenu menu-top menu-icon-generic toplevel_page_revslider"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-generic"><br></div><div class="wp-menu-name">Revolution Slider</div></a></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_sitepress-multilingual-cms/menu/languages" id="toplevel_page_sitepress-multilingual-cms-menu-languages"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/languages.php" class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_sitepress-multilingual-cms/menu/languages" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before"><img src="../wp-content/plugins/sitepress-multilingual-cms/res/img/icon16.png" alt=""></div><div class="wp-menu-name">WPML</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">WPML</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/languages.php" class="wp-first-item">Idiomas</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/theme-localization.php">Localización de temas y plugins</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/translation-options.php">Opciones de traducción</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/support.php">Soporte</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/menu-sync/menus-sync.php">Sincronización de Menús de WP</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/taxonomy-translation.php">Traducción de taxonomía</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_layerslider menu-top-last" id="toplevel_page_layerslider"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=layerslider" class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_layerslider menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before"><img src="../wp-content/themes/Avada/framework/plugins/LayerSlider/img/icon_16x16.png" alt=""></div><div class="wp-menu-name">LayerSlider WP</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head" aria-hidden="true">LayerSlider WP</li><li class="wp-first-item"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=layerslider" class="wp-first-item">All Sliders</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=layerslider_add_new">Add New</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=layerslider_skin_editor">Skin Editor</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=layerslider_transition_builder">Transition Builder</a></li><li><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=layerslider_style_editor">Custom Styles Editor</a></li></ul></li><li id="collapse-menu" class="hide-if-no-js"><div id="collapse-button"><div></div></div><span>Cerrar menú</span></li></ul>
+</div>
+</div>
+<div id="wpcontent">
+
+		<div id="wpadminbar" class="">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Barra de herramientas" tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-menu-toggle"><a class="ab-item" href="plugins.php.html#" aria-expanded="false"><span class="ab-icon"></span><span class="screen-reader-text">Menú</span></a>		</li>
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://www.crowd-dreaming.com/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">Acerca de WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/about.php">Acerca de WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item" href="https://es.wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentación</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item" href="http://es.forums.wordpress.org/">Foros de soporte</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item" href="http://es.forums.wordpress.org/forum/peticiones-y-feedback">Sugerencias</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="../index.html">Crowd-Dreaming</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-view-site"><a class="ab-item" href="../index.html">Visitar sitio</a>		</li>
+		<li id="wp-admin-bar-smof_options"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/themes.php?page=optionsframework">Opciones del tema</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/edit-comments.php" title="0 comentarios están esperando moderación"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://www.crowd-dreaming.com/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">Nuevo</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/post-new.php">Entrada</a>		</li>
+		<li id="wp-admin-bar-new-media"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/media-new.php">Medio</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=page">Página</a>		</li>
+		<li id="wp-admin-bar-new-avada_portfolio"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=avada_portfolio">Portfolio</a>		</li>
+		<li id="wp-admin-bar-new-avada_faq"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=avada_faq">FAQ</a>		</li>
+		<li id="wp-admin-bar-new-themefusion_elastic"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=themefusion_elastic">Elastic Slide</a>		</li>
+		<li id="wp-admin-bar-new-slide"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/post-new.php?post_type=slide">Slide</a>		</li>
+		<li id="wp-admin-bar-new-user"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/user-new.php">Usuario</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-WPML_ALS" class="menupop"><div class="ab-item ab-empty-item" aria-haspopup="true" title="Mostrando contenido en: Español"><img class="icl_als_iclflag" src="../wp-content/plugins/sitepress-multilingual-cms/res/flags/es.png" alt="es" width="18" height="12">&nbsp;Español&nbsp;&nbsp;<img title="ayuda" id="wpml_als_help_link" src="../wp-content/plugins/sitepress-multilingual-cms/res/img/question1.png" alt="ayuda" width="16" height="16"></div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-WPML_ALS-default" class="ab-submenu">
+		<li id="wp-admin-bar-WPML_ALS_ca"><a class="ab-item" href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-lang=ca&admin_bar=1&reauth=1.html" title="Mostrar el contenido en: Catalán"><img class="icl_als_iclflag" src="../wp-content/plugins/sitepress-multilingual-cms/res/flags/ca.png" alt="ca" width="18" height="12">&nbsp;Catalán</a>		</li>
+		<li id="wp-admin-bar-WPML_ALS_all"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/plugins.php?lang=all" title="Mostrar el contenido en: Todos los idiomas"><img class="icl_als_iclflag" src="../wp-content/plugins/sitepress-multilingual-cms/res/img/icon16.png" alt="all" width="16" height="16">&nbsp;Todos los idiomas</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-updraft_admin_node" class="menupop"><div class="ab-item ab-empty-item" aria-haspopup="true">UpdraftPlus</div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-updraft_admin_node-default" class="ab-submenu">
+		<li id="wp-admin-bar-updraft_admin_node_status"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=updraftplus&tab=status">Estado actual / Respaldar ahora</a>		</li>
+		<li id="wp-admin-bar-updraft_admin_node_backups"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=updraftplus&tab=backups">Respaldos Existentes</a>		</li>
+		<li id="wp-admin-bar-updraft_admin_node_settings"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=updraftplus&tab=settings">Ajustes</a>		</li>
+		<li id="wp-admin-bar-updraft_admin_node_expert_content"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=updraftplus&tab=expert">Depurando / Herramientas de expertos</a>		</li>
+		<li id="wp-admin-bar-updraft_admin_node_addons"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=updraftplus&tab=addons">Complementos (Add-ons)</a>		</li>
+		<li id="wp-admin-bar-updraft_admin_node_premium"><a class="ab-item" href="https://updraftplus.com/shop/updraftplus-premium/">UpdraftPlus Premium</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://www.crowd-dreaming.com/wp-admin/profile.php">Hola, admin<img alt="" src="http://0.gravatar.com/avatar/f0478ce21d8b9f69782aa33da09a5728?s=26&d=mm&r=g" srcset="http://0.gravatar.com/avatar/f0478ce21d8b9f69782aa33da09a5728?s=52&d=mm&r=g 2x" class="avatar avatar-26 photo" height="26" width="26"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://www.crowd-dreaming.com/wp-admin/profile.php"><img alt="" src="http://0.gravatar.com/avatar/f0478ce21d8b9f69782aa33da09a5728?s=64&d=mm&r=g" srcset="http://0.gravatar.com/avatar/f0478ce21d8b9f69782aa33da09a5728?s=128&d=mm&r=g 2x" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">admin</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://www.crowd-dreaming.com/wp-admin/profile.php">Editar mi perfil</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item" href="../wp-login.php-loggedout=true.html">Cerrar sesión</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="../wp-login.php-loggedout=true.html">Cerrar sesión</a>
+					</div>
+
+		
+<div id="wpbody" role="main">
+
+<div id="wpbody-content" aria-label="Contenido principal" tabindex="0">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden" tabindex="-1" aria-label="Pestaña de ayuda contextual">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+						
+							<li id="tab-link-overview" class="active">
+								<a href="plugins.php.html#tab-panel-overview" aria-controls="tab-panel-overview">
+									Vista previa								</a>
+							</li>
+						
+							<li id="tab-link-compatibility-problems">
+								<a href="plugins.php.html#tab-panel-compatibility-problems" aria-controls="tab-panel-compatibility-problems">
+									Solución de problemas								</a>
+							</li>
+												</ul>
+					</div>
+
+										<div class="contextual-help-sidebar">
+						<p><strong>Para más información:</strong></p><p><a href="https://codex.wordpress.org/Managing_Plugins#Plugin_Management" target="_blank">Documentación sobre cómo gestionar plugins</a></p><p><a href="http://es.forums.wordpress.org/" target="_blank">Foros de soporte</a></p>					</div>
+					
+					<div class="contextual-help-tabs-wrap">
+						
+							<div id="tab-panel-overview" class="help-tab-content active">
+								<p>Los plugins amplían las funcionalidades de WordPress. Una vez instalados, puedes activarlos o desactivarlos desde aquí.</p><p>Puedes encontrar plugins adicionales para tu sitio usando la funcionalidad <a href="http://www.crowd-dreaming.com/wp-admin/plugin-install.php">Instalador/navegador de plugins</a> o navegando por el <a href="https://wordpress.org/plugins/" target="_blank">directorio de plugins de WordPress</a> directamente e instalando manualmente nuevos plugins. Para instalar manualmente un plugin normalmente necesitarás subir el fichero del plugin a tu directorio <code>/wp-content/plugins</code>. Una vez se haya instalado el plugin puedes activarlo aquí.</p>							</div>
+						
+							<div id="tab-panel-compatibility-problems" class="help-tab-content">
+								<p>La mayoría de las veces los plugins funcionan perfectamente con el núcleo de WordPress y con los otros plugins. Algunas veces, puede haber incompatibilidades entre algunos plugins produciendo problemas. Tu sitio podría comenzar a hacer cosas raras, esto podría ser un problema. Prueba a desactivar tus plugin e ir activándolos uno a uno y comprobando que el problema no reaparezca. Es la forma de detectar el plugin problemático o la combinación de plugins problemáticos.</p><p>Si algo va mal con un plugin y no puedes utilizar tu WordPress, borra o renombra ese archivo en el directorio <code>/htdocs/public/www/wp-content/plugins</code> y se desactivará automáticamente.</p>							</div>
+											</div>
+				</div>
+			</div>
+				<div id="screen-options-wrap" class="hidden" tabindex="-1" aria-label="Pestaña de opciones de pantalla">
+		<form id="adv-settings" method="post">
+					<h5>Mostrar en pantalla</h5>
+					<div class="metabox-prefs">
+				<label for="description-hide"><input class="hide-column-tog" name="description-hide" type="checkbox" id="description-hide" value="description" checked="checked">Descripción</label>
+				<br class="clear">
+			</div>
+				<div class="screen-options">
+							<label for="plugins_per_page">Número de elementos por página:</label>
+				<input type="number" step="1" min="1" max="999" class="screen-per-page" name="wp_screen_options[value]" id="plugins_per_page" maxlength="3" value="999">
+			<input type="submit" name="screen-options-apply" id="screen-options-apply" class="button" value="Aplicar">			<input type="hidden" name="wp_screen_options[option]" value="plugins_per_page">
+		</div>
+				<div><input type="hidden" id="screenoptionnonce" name="screenoptionnonce" value="2f6416e745"></div>
+		</form>
+		</div>
+				</div>
+				<div id="screen-meta-links">
+					<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<button type="button" id="contextual-help-link" class="button show-settings" aria-controls="contextual-help-wrap" aria-expanded="false">Ayuda</button>
+			</div>
+					<div id="screen-options-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<button type="button" id="show-settings-link" class="button show-settings" aria-controls="screen-options-wrap" aria-expanded="false">Opciones de pantalla</button>
+			</div>
+				</div>
+		            <div id="icl_als_help_popup" class="icl_cyan_box icl_pop_info">
+                <img class="icl_pop_info_but_close" align="right" src="../wp-content/plugins/sitepress-multilingual-cms/res/img/ico-close.png" width="12" height="12" alt="x">
+                Este selector de idioma determina qué contenido se muestra. Puede elegir elementos en un idioma específico o en todos los idiomas. Para cambiar el idioma de la interfaz administrativa de WordPress diríjase a <a href="http://www.crowd-dreaming.com/wp-admin/profile.php">su perfil</a>.            </div>
+        
+
+<div class="wrap">
+<h1>Plugins <a href="http://www.crowd-dreaming.com/wp-admin/plugin-install.php" class="page-title-action">Añadir nuevo</a>
+</h1><div class="updated error"><p>Para obtener actualizaciones automáticas, debe registrar WPML para este sitio web. <a class="button-primary" href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-install.php-tab=commercial&reauth=1.html">Registrar WPML</a><br><a class="alignright installer-dismiss-nag" href="plugins.php.html#" data-repository="wpml">Descartar</a><br clear="all"></p></div>
+
+
+<ul class="subsubsub">
+	<li class="all"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-plugin_status=all&reauth=1.html" class="current">Todos <span class="count">(12)</span></a> |</li>
+	<li class="active"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-plugin_status=active&reauth=1.html">Activos <span class="count">(5)</span></a> |</li>
+	<li class="inactive"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-plugin_status=inactive&reauth=1.html">Inactivos <span class="count">(7)</span></a></li>
+</ul>
+<form method="get">
+<p class="search-box">
+	<label class="screen-reader-text" for="plugin-search-input">Buscar Plugins Instalados:</label>
+	<input type="search" id="plugin-search-input" name="s" value="">
+	<input type="submit" id="search-submit" class="button" value="Buscar Plugins Instalados"></p>
+</form>
+
+<form method="post" id="bulk-action-form">
+
+<input type="hidden" name="plugin_status" value="all">
+<input type="hidden" name="paged" value="1">
+
+<input type="hidden" id="_wpnonce" name="_wpnonce" value="ac4f48a22e"><input type="hidden" name="_wp_http_referer" value="/wp-admin/plugins.php">	<div class="tablenav top">
+
+		<div class="alignleft actions bulkactions">
+			<label for="bulk-action-selector-top" class="screen-reader-text">Selecciona acción en lote</label><select name="action" id="bulk-action-selector-top">
+<option value="-1" selected="selected">Acciones en lote</option>
+	<option value="activate-selected">Activar</option>
+	<option value="deactivate-selected">Desactivar</option>
+	<option value="update-selected">Actualizar</option>
+	<option value="delete-selected">Borrar</option>
+</select>
+<input type="submit" id="doaction" class="button action" value="Aplicar">
+		</div>
+<div class="tablenav-pages one-page"><span class="displaying-num">12 elementos</span>
+<span class="pagination-links"><span class="tablenav-pages-navspan" aria-hidden="true">«</span>
+<span class="tablenav-pages-navspan" aria-hidden="true">‹</span>
+<span class="paging-input"><label for="current-page-selector" class="screen-reader-text">Página actual</label><input class="current-page" id="current-page-selector" type="text" name="paged" value="1" size="1" aria-describedby="table-paging"> de <span class="total-pages">1</span></span>
+<span class="tablenav-pages-navspan" aria-hidden="true">›</span>
+<span class="tablenav-pages-navspan" aria-hidden="true">»</span></span></div>
+		<br class="clear">
+	</div>
+<table class="wp-list-table widefat plugins">
+	<thead>
+	<tr>
+		<td id="cb" class="manage-column column-cb check-column"><label class="screen-reader-text" for="cb-select-all-1">Seleccionar todos</label><input id="cb-select-all-1" type="checkbox"></td><th scope="col" id="name" class="manage-column column-name column-primary">Plugin</th><th scope="col" id="description" class="manage-column column-description">Descripción</th>	</tr>
+	</thead>
+
+	<tbody id="the-list">
+		<tr id="akismet" class="inactive" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_daab5d2d514cf7d293376be3ded708f0">Elige Akismet</label><input type="checkbox" name="checked[]" value="akismet/akismet.php" id="checkbox_daab5d2d514cf7d293376be3ded708f0"></th><td class="plugin-title column-primary"><strong>Akismet</strong><div class="row-actions visible"><span class="activate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=activate&plugin=akismet%252Fakismet.php&plugin_status=all&paged=1&s&_wpnonce=a0f14ab751&reauth=1.html" class="edit" aria-label="Activar Akismet">Activar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=akismet%7Cakismet.php&reauth=1.html" class="edit" aria-label="Editar Akismet">Editar</a> | </span><span class="delete"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=delete-selected&checked%255B0%255D=akismet%252Fakismet.php&plugin_status=all&paged=1&s&_wpnonce=ac4f48a22e&reauth=1.html" class="delete" aria-label="Borrar Akismet">Borrar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=Akismet&extension_version=3.1.4&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;Akismet&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Usado por millones de personas, Akismet es posiblemente la mejor forma de <strong> proteger tu blog del spam en comentarios y trackbacks </strong>. Manten tu sitio protegido contra spam incluso mientras duermes. Para comenzar: 1) Haz clic en el enlace "Activar" que está a la izquierda de esta descripción, 2) <a href="http://akismet.com/get/">Regístrate para obtener una clave de API de Akismet</a>, y 3) Ve a la página de configuración de Akismet, y pon allí tu clave de API.</p></div>
+						<div class="inactive second plugin-version-author-uri">Versión 3.1.4 | Por <a href="http://automattic.com/wordpress-plugins/">Automattic</a> | <a href="http://akismet.com/">Visitar la web del plugin</a></div></td></tr><tr id="cf-post-formats" class="inactive" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_5457f641a35b8fdd0c9807b06a5a2041">Elige CF Post Formats</label><input type="checkbox" name="checked[]" value="cf-post-formats/cf-post-formats.php" id="checkbox_5457f641a35b8fdd0c9807b06a5a2041"></th><td class="plugin-title column-primary"><strong>CF Post Formats</strong><div class="row-actions visible"><span class="activate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=activate&plugin=cf-post-formats%252Fcf-post-formats.php&plugin_status=all&paged=1&s&_wpnonce=5cd99a5a7a&reauth=1.html" class="edit" aria-label="Activar CF Post Formats">Activar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=cf-post-formats%7Ccf-post-formats.php&reauth=1.html" class="edit" aria-label="Editar CF Post Formats">Editar</a> | </span><span class="delete"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=delete-selected&checked%255B0%255D=cf-post-formats%252Fcf-post-formats.php&plugin_status=all&paged=1&s&_wpnonce=ac4f48a22e&reauth=1.html" class="delete" aria-label="Borrar CF Post Formats">Borrar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=CF%20Post%20Formats&extension_version=1.1&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;CF Post Formats&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Custom post format admin UI</p></div>
+						<div class="inactive second plugin-version-author-uri">Versión 1.1 | Por <a href="http://crowdfavorite.com">crowdfavorite</a> | <a href="http://crowdfavorite.com">Visitar la web del plugin</a></div></td></tr><tr id="contact-form-7" class="inactive" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_ea51bd17215c1f31055a16d3cf33143b">Elige Contact Form 7</label><input type="checkbox" name="checked[]" value="contact-form-7/wp-contact-form-7.php" id="checkbox_ea51bd17215c1f31055a16d3cf33143b"></th><td class="plugin-title column-primary"><strong>Contact Form 7</strong><div class="row-actions visible"><span class="activate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=activate&plugin=contact-form-7%252Fwp-contact-form-7.php&plugin_status=all&paged=1&s&_wpnonce=112f066bfd&reauth=1.html" class="edit" aria-label="Activar Contact Form 7">Activar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=contact-form-7%7Cwp-contact-form-7.php&reauth=1.html" class="edit" aria-label="Editar Contact Form 7">Editar</a> | </span><span class="delete"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=delete-selected&checked%255B0%255D=contact-form-7%252Fwp-contact-form-7.php&plugin_status=all&paged=1&s&_wpnonce=ac4f48a22e&reauth=1.html" class="delete" aria-label="Borrar Contact Form 7">Borrar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=Contact%20Form%207&extension_version=4.3&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;Contact Form 7&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Otro plugin de formulario de contacto. Simple pero flexible.</p></div>
+						<div class="inactive second plugin-version-author-uri">Versión 4.3 | Por <a href="http://ideasilo.wordpress.com/">Takayuki Miyoshi</a> | <a href="http://contactform7.com/">Visitar la web del plugin</a></div></td></tr><tr id="flexslider" class="inactive" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_f7d086ba1963b998b633fac384a344aa">Elige FlexSlider</label><input type="checkbox" name="checked[]" value="flexslider/wooslider.php" id="checkbox_f7d086ba1963b998b633fac384a344aa"></th><td class="plugin-title column-primary"><strong>FlexSlider</strong><div class="row-actions visible"><span class="activate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=activate&plugin=flexslider%252Fwooslider.php&plugin_status=all&paged=1&s&_wpnonce=d0e5c8e85b&reauth=1.html" class="edit" aria-label="Activar FlexSlider">Activar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=flexslider%7Cwooslider.php&reauth=1.html" class="edit" aria-label="Editar FlexSlider">Editar</a> | </span><span class="delete"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=delete-selected&checked%255B0%255D=flexslider%252Fwooslider.php&plugin_status=all&paged=1&s&_wpnonce=ac4f48a22e&reauth=1.html" class="delete" aria-label="Borrar FlexSlider">Borrar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=FlexSlider&extension_version=1.0.8&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;FlexSlider&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Add responsive sliders to your website using shortcodes, template tags or widgets, to showcase custom slides, blog posts or other content in a responsive animated slider.</p></div>
+						<div class="inactive second plugin-version-author-uri">Versión 1.0.8 | Por Minti FlexSlider</div></td></tr><tr id="fusion-core" class="active" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_002676114f36831666bd8e185d1b84ea">Elige Fusion Core</label><input type="checkbox" name="checked[]" value="fusion-core/fusion-core.php" id="checkbox_002676114f36831666bd8e185d1b84ea"></th><td class="plugin-title column-primary"><strong>Fusion Core</strong><div class="row-actions visible"><span class="deactivate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=deactivate&plugin=fusion-core%252Ffusion-core.php&plugin_status=all&paged=1&s&_wpnonce=8a135dea6a&reauth=1.html" aria-label="Desactivar Fusion Core">Desactivar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=fusion-core%7Cfusion-core.php&reauth=1.html" class="edit" aria-label="Editar Fusion Core">Editar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=Fusion%20Core&extension_version=1.1&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;Fusion Core&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>ThemeFusion Core Plugin for ThemeFusion Themes</p></div>
+						<div class="active second plugin-version-author-uri">Versión 1.1 | Por <a href="http://www.theme-fusion.com">ThemeFusion</a> | <a href="http://www.theme-fusion.com">Visitar la web del plugin</a></div></td></tr><tr id="hello-dolly" class="inactive" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_ad50ce085f737d661f4d39aeec4dbb39">Elige Hello Dolly</label><input type="checkbox" name="checked[]" value="hello.php" id="checkbox_ad50ce085f737d661f4d39aeec4dbb39"></th><td class="plugin-title column-primary"><strong>Hello Dolly</strong><div class="row-actions visible"><span class="activate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=activate&plugin=hello.php&plugin_status=all&paged=1&s&_wpnonce=870011a074&reauth=1.html" class="edit" aria-label="Activar Hello Dolly">Activar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=hello.php&reauth=1.html" class="edit" aria-label="Editar Hello Dolly">Editar</a> | </span><span class="delete"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=delete-selected&checked%255B0%255D=hello.php&plugin_status=all&paged=1&s&_wpnonce=ac4f48a22e&reauth=1.html" class="delete" aria-label="Borrar Hello Dolly">Borrar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=Hello%20Dolly&extension_version=1.6&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;Hello Dolly&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Esto no es solo un plugin, simboliza la esperanza y entusiasmo de toda una generación resumidas en las dos palabras más famosas cantadas por Louis Armstrong: Hello, Dolly. Cuando lo actives verás frases al azar de Hello, Dolly en la parte superior derecha de cada página de tu pantalla de administración.</p></div>
+						<div class="inactive second plugin-version-author-uri">Versión 1.6 | Por <a href="http://ma.tt/">Matt Mullenweg</a> | <a href="http://wordpress.org/plugins/hello-dolly/">Visitar la web del plugin</a></div></td></tr><tr id="installer" class="active" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_d1be377656960ed04f1564da21d80c8d">Elige Installer</label><input type="checkbox" name="checked[]" value="installer/wp-installer.php" id="checkbox_d1be377656960ed04f1564da21d80c8d"></th><td class="plugin-title column-primary"><strong>Installer</strong><div class="row-actions visible"><span class="deactivate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=deactivate&plugin=installer%252Fwp-installer.php&plugin_status=all&paged=1&s&_wpnonce=ed7c750d36&reauth=1.html" aria-label="Desactivar Installer">Desactivar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=installer%7Cwp-installer.php&reauth=1.html" class="edit" aria-label="Editar Installer">Editar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=http://api.wp-compatibility.com/&extension_name=Installer&extension_version=0.7.1&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;Installer&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Need help buying, installing and upgrading commercial themes and plugins? **Installer** handles all this for you, right from the WordPress admin. Installer lets you find themes and plugins from different sources, then, buy them from within the WordPress admin. Instead of manually uploading and unpacking, you'll see those themes and plugins available, just like any other plugin you're getting from WordPress.org.</p></div>
+						<div class="active second plugin-version-author-uri">Versión 0.7.1 | Por <a href="http://www.onthegosystems.com/">OnTheGoSystems Inc.</a> | <a href="http://wp-compatibility.com/installer-plugin/">Visitar la web del plugin</a></div></td></tr><tr id="post-types-order" class="inactive" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_b4ff27fd64e7d9320f6f2d258f1dcc94">Elige Post Types Order</label><input type="checkbox" name="checked[]" value="post-types-order/post-types-order.php" id="checkbox_b4ff27fd64e7d9320f6f2d258f1dcc94"></th><td class="plugin-title column-primary"><strong>Post Types Order</strong><div class="row-actions visible"><span class="activate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=activate&plugin=post-types-order%252Fpost-types-order.php&plugin_status=all&paged=1&s&_wpnonce=d7bdc0cece&reauth=1.html" class="edit" aria-label="Activar Post Types Order">Activar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=post-types-order%7Cpost-types-order.php&reauth=1.html" class="edit" aria-label="Editar Post Types Order">Editar</a> | </span><span class="delete"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=delete-selected&checked%255B0%255D=post-types-order%252Fpost-types-order.php&plugin_status=all&paged=1&s&_wpnonce=ac4f48a22e&reauth=1.html" class="delete" aria-label="Borrar Post Types Order">Borrar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=Post%20Types%20Order&extension_version=1.8.5&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;Post Types Order&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Posts Order and Post Types Objects Order using a Drag and Drop Sortable javascript capability</p></div>
+						<div class="inactive second plugin-version-author-uri">Versión 1.8.5 | Por <a href="http://www.nsp-code.com">Nsp Code</a> | <a href="http://www.nsp-code.com">Visitar la web del plugin</a></div></td></tr><tr id="recent-tweets-widget" class="inactive" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_167563c75c0b70e40db112fe8316e6fb">Elige Recent Tweets Widget</label><input type="checkbox" name="checked[]" value="recent-tweets-widget/recent-tweets.php" id="checkbox_167563c75c0b70e40db112fe8316e6fb"></th><td class="plugin-title column-primary"><strong>Recent Tweets Widget</strong><div class="row-actions visible"><span class="activate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=activate&plugin=recent-tweets-widget%252Frecent-tweets.php&plugin_status=all&paged=1&s&_wpnonce=a9cdc37bcf&reauth=1.html" class="edit" aria-label="Activar Recent Tweets Widget">Activar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=recent-tweets-widget%7Crecent-tweets.php&reauth=1.html" class="edit" aria-label="Editar Recent Tweets Widget">Editar</a> | </span><span class="delete"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=delete-selected&checked%255B0%255D=recent-tweets-widget%252Frecent-tweets.php&plugin_status=all&paged=1&s&_wpnonce=ac4f48a22e&reauth=1.html" class="delete" aria-label="Borrar Recent Tweets Widget">Borrar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=Recent%20Tweets%20Widget&extension_version=1.6.4&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;Recent Tweets Widget&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Recent Tweets Widget plugin for Twitter API v1.1 with Cache. It uses the new Twitter API v1.1 and stores tweets in the cache. It means that it will read status messages from your database and it doesn't query Twitter.com for every page load so you won't be rate limited. You can set how often you want to update the cache.</p></div>
+						<div class="inactive second plugin-version-author-uri">Versión 1.6.4 | Por <a href="http://sumome.com">Noah Kagan</a> | <a href="http://wordpress.org/extend/plugins/recent-tweets-widget/">Visitar la web del plugin</a></div></td></tr><tr id="revolution-slider" class="active" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_d6a4d07d1b4022d886df52322dcd8a6f">Elige Revolution Slider</label><input type="checkbox" name="checked[]" value="revslider/revslider.php" id="checkbox_d6a4d07d1b4022d886df52322dcd8a6f"></th><td class="plugin-title column-primary"><strong>Revolution Slider</strong><div class="row-actions visible"><span class="deactivate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=deactivate&plugin=revslider%252Frevslider.php&plugin_status=all&paged=1&s&_wpnonce=32751c5094&reauth=1.html" aria-label="Desactivar Revolution Slider">Desactivar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=revslider%7Crevslider.php&reauth=1.html" class="edit" aria-label="Editar Revolution Slider">Editar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=Revolution%20Slider&extension_version=4.1.4&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;Revolution Slider&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Revolution Slider - Premium responsive slider</p></div>
+						<div class="active second plugin-version-author-uri">Versión 4.1.4 | Por <a href="http://themepunch.com">ThemePunch</a> | <a href="http://www.themepunch.com/codecanyon/revolution_wp/">Visitar la web del plugin</a></div></td></tr><tr id="updraftplus-backuprestore" class="active" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_501e5a7aa3b46dd165559606c1c0892a">Elige UpdraftPlus - Backup/Restore</label><input type="checkbox" name="checked[]" value="updraftplus/updraftplus.php" id="checkbox_501e5a7aa3b46dd165559606c1c0892a"></th><td class="plugin-title column-primary"><strong>UpdraftPlus - Backup/Restore</strong><div class="row-actions visible"><span class="0"><a href="https://updraftplus.com">Complementos / Soporte profesional</a> | </span><span class="1"><a href="http://www.crowd-dreaming.com/wp-admin/options-general.php?page=updraftplus">Ajustes</a> | </span><span class="deactivate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=deactivate&plugin=updraftplus%252Fupdraftplus.php&plugin_status=all&paged=1&s&_wpnonce=32252f772e&reauth=1.html" aria-label="Desactivar UpdraftPlus - Backup/Restore">Desactivar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=updraftplus%7Cupdraftplus.php&reauth=1.html" class="edit" aria-label="Editar UpdraftPlus - Backup/Restore">Editar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=UpdraftPlus%20-%20Backup/Restore&extension_version=1.11.12&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;UpdraftPlus - Backup/Restore&quot; plugin">Check compatibility</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>Backup and restore: take backups locally, or backup to Amazon S3, Dropbox, Google Drive, Rackspace, (S)FTP, WebDAV &amp; email, on automatic schedules.</p></div>
+						<div class="active second plugin-version-author-uri">Versión 1.11.12 | Por <a href="https://updraftplus.com">UpdraftPlus.Com, DavidAnderson</a> | <a href="https://updraftplus.com">Visitar la web del plugin</a></div></td></tr><tr id="wpml-multilingual-cms" class="active" data-slug=""><th scope="row" class="check-column"><label class="screen-reader-text" for="checkbox_96371a469d468985ad585d029d776c22">Elige WPML Multilingual CMS</label><input type="checkbox" name="checked[]" value="sitepress-multilingual-cms/sitepress.php" id="checkbox_96371a469d468985ad585d029d776c22"></th><td class="plugin-title column-primary"><strong>WPML Multilingual CMS</strong><div class="row-actions visible"><span class="deactivate"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugins.php-action=deactivate&plugin=sitepress-multilingual-cms%252Fsitepress.php&plugin_status=all&paged=1&s&_wpnonce=16d9320588&reauth=1.html" aria-label="Desactivar WPML Multilingual CMS">Desactivar</a> | </span><span class="edit"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-editor.php-file=sitepress-multilingual-cms%7Csitepress.php&reauth=1.html" class="edit" aria-label="Editar WPML Multilingual CMS">Editar</a> | </span><span class="check_compatibility"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?wprc_c=repository-reporter&wprc_action=checkCompatibility&repository_id=&repository_url=&extension_name=WPML%20Multilingual%20CMS&extension_version=3.2.7&extension_type_singular=plugin&extension_type=plugins&TB_iframe=true&width=400&height=300" class="thickbox check-compatibility" title="Check compatibility status for &quot;WPML Multilingual CMS&quot; plugin">Check compatibility</a> | </span><span class="0"><a href="http://www.crowd-dreaming.com/wp-admin/admin.php?page=sitepress-multilingual-cms/menu/languages.php">Configurar</a> | </span><span class="1"><a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-install.php-tab=commercial&reauth=1.html">Registrar</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Muestra más detalles</span></button></td><td class="column-description desc">
+						<div class="plugin-description"><p>WPML Multilingual CMS | <a href="https://wpml.org">Documentation</a> | <a href="https://wpml.org/version/wpml-3-2/">WPML 3.2 release notes</a></p></div>
+						<div class="active second plugin-version-author-uri">Versión 3.2.7 | Por <a href="http://www.onthegosystems.com/">OnTheGoSystems</a> | <a href="https://wpml.org/">Visitar la web del plugin</a></div></td></tr>        
+        <tr class="plugin-update-tr"><td colspan="3" class="plugin-update colspanchange">
+            <div class="update-message installer-q-icon">
+            Debe tener una suscripción válida para obtener actualizaciones  o soporte para este plugin. <a href="../wp-login.php-redirect_to=http-%7C%7Cwww.crowd-dreaming.com%7Cwp-admin%7Cplugin-install.php-tab=commercial&reauth=1.html">Compre una suscripción o introduzca una clave de sitio existente</a>.            </div>
+        </td></tr>
+        
+        	</tbody>
+
+	<tfoot>
+	<tr>
+		<td class="manage-column column-cb check-column"><label class="screen-reader-text" for="cb-select-all-2">Seleccionar todos</label><input id="cb-select-all-2" type="checkbox"></td><th scope="col" class="manage-column column-name column-primary">Plugin</th><th scope="col" class="manage-column column-description">Descripción</th>	</tr>
+	</tfoot>
+
+</table>
+	<div class="tablenav bottom">
+
+		<div class="alignleft actions bulkactions">
+			<label for="bulk-action-selector-bottom" class="screen-reader-text">Selecciona acción en lote</label><select name="action2" id="bulk-action-selector-bottom">
+<option value="-1" selected="selected">Acciones en lote</option>
+	<option value="activate-selected">Activar</option>
+	<option value="deactivate-selected">Desactivar</option>
+	<option value="update-selected">Actualizar</option>
+	<option value="delete-selected">Borrar</option>
+</select>
+<input type="submit" id="doaction2" class="button action" value="Aplicar">
+		</div>
+<div class="tablenav-pages one-page"><span class="displaying-num">12 elementos</span>
+<span class="pagination-links"><span class="tablenav-pages-navspan" aria-hidden="true">«</span>
+<span class="tablenav-pages-navspan" aria-hidden="true">‹</span>
+<span class="screen-reader-text">Página actual</span><span id="table-paging" class="paging-input">1 de <span class="total-pages">1</span></span>
+<span class="tablenav-pages-navspan" aria-hidden="true">›</span>
+<span class="tablenav-pages-navspan" aria-hidden="true">»</span></span></div>
+		<br class="clear">
+	</div>
+</form>
+
+</div>
+
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter" role="contentinfo">
+		<p id="footer-left" class="alignleft">
+		<span id="footer-thankyou">Gracias por crear con <a href="https://es.wordpress.org/">WordPress</a>.</span>	</p>
+	<p id="footer-upgrade" class="alignright">
+		Versión 4.3.1	</p>
+	<div class="clear"></div>
+</div>
+            <script type="text/javascript">
+            addLoadEvent(function(){
+                	            var menu_id = 'top_navigation';
+	            var location_menu_id = jQuery('#locations-' + menu_id);
+	            if(location_menu_id.length > 0){
+                    location_menu_id.find('option').first().html('no está traducida al idioma actual');
+                    location_menu_id.css('font-style','italic');
+                    location_menu_id.change(function(){if(jQuery(this).val()!=0) jQuery(this).css('font-style','normal');else jQuery(this).css('font-style','italic')});
+                }
+                	            var menu_id = '404_pages';
+	            var location_menu_id = jQuery('#locations-' + menu_id);
+	            if(location_menu_id.length > 0){
+                    location_menu_id.find('option').first().html('no está traducida al idioma actual');
+                    location_menu_id.css('font-style','italic');
+                    location_menu_id.change(function(){if(jQuery(this).val()!=0) jQuery(this).css('font-style','normal');else jQuery(this).css('font-style','italic')});
+                }
+                            });            
+            </script>
+            	<div id="wp-auth-check-wrap" class="hidden">
+	<div id="wp-auth-check-bg"></div>
+	<div id="wp-auth-check">
+	<div class="wp-auth-check-close" tabindex="0" title="Cerrar"></div>
+			<div id="wp-auth-check-form" data-src="http://www.crowd-dreaming.com/wp-login.php?interim-login=1"></div>
+			<div class="wp-auth-fallback">
+		<p><b class="wp-auth-fallback-expired" tabindex="0">Sesión caducada</b></p>
+		<p><a href="../wp-login.php.html" target="_blank">Por favor, accede de nuevo.</a>
+		La página de acceso se abrirá en una ventana nueva. Después del acceso puede cerrarla y volver a esta página.</p>
+	</div>
+	</div>
+	</div>
+	
+<script type="text/javascript">
+/* <![CDATA[ */
+var commonL10n = {"warnDelete":"Est\u00e1s a punto de borrar permanentemente los elementos seleccionados. \n  'Aceptar' para borrar, 'Cancelar' para salir.","dismiss":"Descartar este aviso."};var wpColorPickerL10n = {"clear":"Borrar","defaultString":"Predeterminado","pick":"Elige un color","current":"Color actual"};var thickboxL10n = {"next":"Siguiente >","prev":"< Anterior","image":"Imagen","of":"de","close":"Cerrar","noiframes":"Esta funci\u00f3n requiere de frames insertados. Tienes los iframes desactivados o tu navegador no los soporta.","loadingAnimation":"http:\/\/www.crowd-dreaming.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};var plugininstallL10n = {"plugin_information":"Informaci\u00f3n del plugin:","ays":"\u00bfEst\u00e1s seguro de querer instalar este plugin?"};var heartbeatSettings = {"nonce":"798eb3caeb"};var authcheckL10n = {"beforeunload":"Tu sesi\u00f3n ha caducado. Puedes identificarte otra vez desde esta p\u00e1gina o ir a la p\u00e1gina de identificaci\u00f3n.","interval":"180"};/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.crowd-dreaming.com/wp-admin/load-scripts.php?c=1&load%5B%5D=hoverIntent,common,admin-bar,jquery-ui-mouse,jquery-ui-sortable,jquery-ui-draggable,jquery-ui-slider,jquery-touch-punch,iris,wp-&load%5B%5D=color-picker,thickbox,plugin-install,svg-painter,heartbeat,wp-auth-check,sack,jquery-ui-resizable,jquery-ui-position,jquery-ui-d&load%5B%5D=ialog,shortcode,media-upload&ver=4.3.1"></script>
+
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+
+
+<div id="wp-a11y-speak-polite" role="status" aria-live="polite" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div><div id="wp-a11y-speak-assertive" role="alert" aria-live="assertive" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div></body></html>

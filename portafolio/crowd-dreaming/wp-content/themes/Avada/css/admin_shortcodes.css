@@ -1,0 +1,219 @@
+#menu_content_content_tfbutton_menu{
+	z-index:1 !important;
+	width:284px !important;
+}
+
+#menu_content_content_tfbutton_menu_co,#menu_content_content_tfbutton_menu_tbl{
+	background-image:url("../tinymce/sep.png.html");
+	background-repeat:repeat-y;
+	background-position:center center;
+	width:284px !important;
+}
+
+#menu_content_content_tfbutton_menu .mceMenuItem{
+	display:inline-block;
+	float:left;
+}
+
+#menu_content_content_tfbutton_menu .mceMenuItem a{
+	width:142px;
+	height:30px;
+	line-height:30px;
+	padding:0;
+}
+
+#menu_content_content_tfbutton_menu .mceMenuItemDisabled{
+	width:100%;
+	display:block;
+	float:none;
+}
+
+#menu_content_content_tfbutton_menu .mceMenuItemDisabled a{
+	width:284px;
+}
+
+#menu_content_content_tfbutton_menu .mceMenuItemDisabled .mceText{
+	padding:0;
+	padding-left:10px;
+}
+
+#menu_content_content_tfbutton_menu .mceText{
+	padding-left:48px;
+}
+
+#menu_content_content_tfbutton_menu .mceIcon{
+	background-image:none;
+	background-position:center center;
+	width:50px;
+	height:30px;
+}
+
+.mce_avada_youtube{
+	background-image:url("../tinymce/youtube.png.html") !important;
+}
+
+.mce_avada_vimeo{
+	background-image:url("../tinymce/vimeo.png.html") !important;
+}
+
+.mce_avada_soundcloud{
+	background-image:url("../tinymce/soundcloud.png.html") !important;
+}
+
+.mce_avada_button{
+	background-image:url("../tinymce/button.png.html") !important;
+}
+
+.mce_avada_dropcap{
+	background-image:url("../tinymce/dropcap.png.html") !important;
+}
+
+.mce_avada_highlight{
+	background-image:url("../tinymce/highlight.png.html") !important;
+}
+
+.mce_avada_checklist{
+	background-image:url("../tinymce/checklist.png.html") !important;
+}
+
+.mce_avada_tabs{
+	background-image:url("../tinymce/tabs.png.html") !important;
+}
+
+.mce_avada_toggle{
+	background-image:url("../tinymce/toggles.png.html") !important;
+}
+
+.mce_avada_half{
+	background-image:url("../tinymce/half.png.html") !important;
+}
+
+.mce_avada_third{
+	background-image:url("../tinymce/one_third.png.html") !important;
+}
+
+.mce_avada_two_third{
+	background-image:url("../tinymce/two_third.png.html") !important;
+}
+
+.mce_avada_fourth{
+	background-image:url("../tinymce/one_fourth.png.html") !important;
+}
+
+.mce_avada_three_fourth{
+	background-image:url("../tinymce/three_fourth.png.html") !important;
+}
+
+.mce_avada_slider{
+	background-image:url("../tinymce/slider.png.html") !important;
+}
+
+.mce_avada_testimonial{
+	background-image:url("../tinymce/testimonials.png.html") !important;
+}
+
+.mce_avada_social_links{
+	background-image:url("../tinymce/social_links.png.html") !important;
+}
+
+.mce_avada_client_slider{
+	background-image:url("../tinymce/clients_slider.png.html") !important;
+}
+
+.mce_avada_title{
+	background-image:url("../tinymce/title.png.html") !important;
+}
+
+.mce_avada_separator{
+	background-image:url("../tinymce/spacer.png.html") !important;
+}
+
+.mce_avada_lightbox{
+	background-image:url("../tinymce/lightbox.png.html") !important;
+}
+
+.mce_avada_progress_bar{
+	background-image:url("../tinymce/progress_bar.png.html") !important;
+}
+
+.mce_avada_person{
+	background-image:url("../tinymce/person.png.html") !important;
+}
+
+.mce_avada_alert{
+	background-image:url("../tinymce/alert.png.html") !important;
+}
+
+.mce_avada_pricing_table{
+	background-image:url("../tinymce/pricing.png.html") !important;
+}
+
+.mce_avada_recent_works{
+	background-image:url("../tinymce/recent_works.png.html") !important;
+}
+
+.mce_avada_tagline{
+	background-image:url("../tinymce/tagline.png.html") !important;
+}
+
+.mce_avada_content_boxes{
+	background-image:url("../tinymce/content_boxes.png.html") !important;
+}
+
+.mce_avada_recent_posts{
+	background-image:url("../tinymce/recent_news.png.html") !important;
+}
+
+.mce_avada_fontawesome{
+	background-image:url("../tinymce/fontawesome.png.html") !important;
+}
+
+.mce_avada_tooltip{
+	background-image:url("../tinymce/tooltip.png.html") !important;
+}
+
+.mce_avada_full{
+	background-image:url("../tinymce/fullwidth.png.html") !important;
+}
+
+.mce_avada_map{
+	background-image:url("../tinymce/googlemap.png.html") !important;
+}
+
+.mce_avada_counters_circle{
+	background-image:url("../tinymce/countercircle.png.html") !important;
+}
+
+.mce_avada_counters_box{
+	background-image:url("../tinymce/counterbox.png.html") !important;
+}
+
+.mce_avada_flexslider{
+	background-image:url("../tinymce/flexslider.png.html") !important;
+}
+
+.mce_avada_blog{
+	background-image:url("../tinymce/blog.png.html") !important;
+}
+
+.mce_avada_img_frames{
+	background-image:url("../tinymce/imageframes.png.html") !important;
+}
+
+.mce_avada_img_carousel{
+	background-image:url("../tinymce/imagecarousel.png.html") !important;
+}
+
+.mce_avada_sharing_box{
+	background-image:url("../tinymce/socialshare.png.html") !important;
+}
+
+.mce_avada_table{
+	background-image:url("../tinymce/table.png.html") !important;
+}
+
+.mce_avada_woo{
+	background-image:url("../tinymce/woo_icon.png.html") !important;
+}
+
+#poststuff .pyre_metabox h2{margin-top:30px;}
