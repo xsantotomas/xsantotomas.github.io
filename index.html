@@ -1,173 +1,342 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Nombre | Consultoría Profesional</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Formación & Coaching Educativo | María García</title>
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Estilos generales */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
         }
-        /* Pequeño ajuste para el offset del ancla por la barra de navegación fija */
+        
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        /* Menú de navegación */
+        nav {
+            background: #4a2c82;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #ff7e5f;
+        }
+        
+        /* Secciones */
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 20px 0;
+        }
+        
         section {
-            scroll-margin-top: 64px; 
+            padding: 40px 0;
+        }
+        
+        /* Servicios */
+        .servicios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .servicio-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px 20px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .servicio-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .servicio-card i {
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        /* Sobre mí */
+        #sobre-mi {
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .perfil {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .foto-perfil {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #6e48aa;
+            margin-bottom: 20px;
+        }
+        
+        /* Testimonios */
+        .testimonios {
+            background: #f4f4f4;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .testimonio-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            display: inline-block;
+        }
+        
+        /* Contacto */
+        .contacto {
+            background: #6e48aa;
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .form-contacto {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        form button {
+            background: #ff7e5f;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        form button:hover {
+            background: #e8491d;
+        }
+        
+        /* Pie de página */
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .redes-sociales {
+            margin: 20px 0;
+        }
+        
+        .redes-sociales a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        
+        .redes-sociales a:hover {
+            color: #6e48aa;
+        }
+        
+        .enlaces-footer {
+            margin: 20px 0;
+        }
+        
+        .enlaces-footer a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .enlaces-footer a:hover {
+            color: white;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <!-- Header / Barra de Navegación -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-900">Tu Marca</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#servicios" class="text-gray-600 hover:text-blue-600 transition duration-300">Servicios</a>
-                <a href="#sobre-mi" class="text-gray-600 hover:text-blue-600 transition duration-300">Sobre Mí</a>
-                <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition duration-300">Contacto</a>
-            </div>
-            <div class="md:hidden">
-                <!-- Menú móvil (funcionalidad se puede añadir con JS) -->
-                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
-            </div>
-        </nav>
-        <!-- Menú desplegable para móvil -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white">
-            <a href="#servicios" class="block py-2 px-4 text-sm text-gray-700 hover:bg-blue-50">Servicios</a>
-            <a href="#sobre-mi" class="block py-2 px-4 text-sm text-gray-700 hover:bg-blue-50">Sobre Mí</a>
-            <a href="#contacto" class="block py-2 px-4 text-sm text-gray-700 hover:bg-blue-50">Contacto</a>
-        </div>
+<body>
+    <!-- Encabezado principal -->
+    <header id="inicio">
+        <h1>María García</h1>
+        <p>Formación y Coaching para Educadores</p>
+        <p>Transformando la educación desde 2010</p>
     </header>
-
-    <main>
-        <!-- Sección Principal (Hero) -->
-        <section id="hero" class="bg-white py-20 md:py-32">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">Soluciones Estratégicas para tu Crecimiento</h1>
-                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Ofrezco servicios de formación, asesoría y gestión de proyectos para impulsar tus objetivos y optimizar tus resultados.</p>
-                <a href="#contacto" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">Hablemos de tu proyecto</a>
+    
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <!-- Sección de Inicio -->
+    <section id="inicio-seccion" class="container">
+        <h2>Transforma tu Enfoque Educativo</h2>
+        <p>Ofrezco formación y coaching especializado para educadores que desean mejorar sus metodologías, potenciar el aprendizaje y revolucionar sus aulas. Con más de 10 años de experiencia en el sector educativo.</p>
+        <p>¿Estás listo para llevar tu práctica educativa al siguiente nivel?</p>
+    </section>
+    
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="container">
+        <h2>Mis Servicios</h2>
+        <div class="servicios">
+            <div class="servicio-card">
+                <i class="fas fa-chalkboard-teacher fa-3x" style="color: #6e48aa;"></i>
+                <h3>Talleres para Docentes</h3>
+                <p>Sesiones prácticas y dinámicas para innovar en el aula con metodologías activas.</p>
             </div>
-        </section>
-
-        <!-- Sección de Servicios -->
-        <section id="servicios" class="py-20">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Mis Servicios</h2>
-                    <p class="text-gray-600 mt-2">Enfoques personalizados para cada una de tus necesidades.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Tarjeta de Servicio 1: Formación -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20M1 14v5h22v-5"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Formación</h3>
-                        <p class="text-gray-600">Programas y talleres a medida para desarrollar las competencias de tu equipo y potenciar el talento interno.</p>
-                    </div>
-                    <!-- Tarjeta de Servicio 2: Asesoría/Consultoría -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Asesoría y Consultoría</h3>
-                        <p class="text-gray-600">Análisis y diagnóstico experto para identificar oportunidades de mejora y diseñar estrategias efectivas.</p>
-                    </div>
-                    <!-- Tarjeta de Servicio 3: Gestión de Proyectos -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Gestión de Proyectos</h3>
-                        <p class="text-gray-600">Liderazgo y coordinación de proyectos desde la planificación hasta la ejecución, garantizando el cumplimiento de plazos y objetivos.</p>
-                    </div>
-                </div>
+            <div class="servicio-card">
+                <i class="fas fa-user-graduate fa-3x" style="color: #e8491d;"></i>
+                <h3>Coaching Personalizado</h3>
+                <p>Acompañamiento individualizado para educadores que buscan crecimiento profesional.</p>
             </div>
-        </section>
-
-        <!-- Sección Sobre Mí -->
-        <section id="sobre-mi" class="bg-white py-20">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/3">
-                        <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Tu+Foto" alt="Retrato profesional" class="rounded-full shadow-2xl mx-auto w-64 h-64 md:w-full md:h-auto object-cover">
-                    </div>
-                    <div class="md:w-2/3 text-center md:text-left">
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sobre Mí</h2>
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            ¡Hola! Soy [Tu Nombre], un profesional apasionado por ayudar a empresas y personas a alcanzar su máximo potencial. Con más de [Número] años de experiencia en el sector, he tenido el privilegio de colaborar en proyectos de diversa índole, siempre con un enfoque en la eficiencia, la innovación y los resultados medibles.
-                        </p>
-                        <p class="text-gray-600 leading-relaxed">
-                            Mi misión es aportar una perspectiva externa y experta que te permita superar tus desafíos y capitalizar nuevas oportunidades. Creo firmemente en la colaboración y en la creación de relaciones a largo plazo basadas en la confianza y el éxito mutuo.
-                        </p>
-                    </div>
-                </div>
+            <div class="servicio-card">
+                <i class="fas fa-laptop fa-3x" style="color: #2c9c5a;"></i>
+                <h3>Cursos Online</h3>
+                <p>Formación en metodologías activas, neuroeducación y herramientas digitales.</p>
             </div>
-        </section>
-
-        <!-- Sección de Contacto -->
-        <section id="contacto" class="py-20">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Contacta Conmigo</h2>
-                    <p class="text-gray-600 mt-2">¿Listo para empezar? Envíame un mensaje y te responderé lo antes posible.</p>
-                </div>
-                <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-                    <form action="#" method="POST">
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div class="mb-6">
-                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 w-full">Enviar Mensaje</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="servicio-card">
+                <i class="fas fa-brain fa-3x" style="color: #ff7e5f;"></i>
+                <h3>Neuroeducación</h3>
+                <p>Aplicación práctica de las neurociencias en el proceso de enseñanza-aprendizaje.</p>
             </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2024 Tu Marca. Todos los derechos reservados.</p>
-            <div class="mt-4 flex justify-center space-x-4">
-                <!-- Aquí puedes añadir enlaces a tus redes sociales -->
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">LinkedIn</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Twitter</a>
+        </div>
+    </section>
+    
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="container">
+        <h2>Sobre Mí</h2>
+        <div class="perfil">
+            <img src="https://via.placeholder.com/200" alt="Foto de María García" class="foto-perfil">
+            <h3>María García</h3>
+            <p>Soy especialista en educación con más de 10 años de experiencia ayudando a docentes a revolucionar su enseñanza. Mi misión es bridge the gap entre la teoría educativa y la práctica en el aula.</p>
+            <p>Licenciada en Pedagogía y Máster en Neuroeducación, he trabajado con más de 500 educadores en toda España, ayudándoles a descubrir su potencial y transformar sus metodologías.</p>
+            <p>Creo firmemente que cada educador tiene el poder de cambiar vidas, y mi trabajo es proporcionarte las herramientas para hacerlo de manera efectiva y apasionante.</p>
+        </div>
+    </section>
+    
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <h2>Lo que Dicen Mis Clientes</h2>
+            <div class="testimonio-card">
+                <p><em>"Gracias a María, mis clases son ahora más dinámicas y mis alumnos están más motivados. He redescubierto mi pasión por enseñar."</em></p>
+                <p><strong>— Ana Martínez, profesora de primaria</strong></p>
             </div>
+            <div class="testimonio-card">
+                <p><em>"El coaching educativo con María transformó completamente mi approach. Ahora me siento más segura y efectiva en el aula."</em></p>
+                <p><strong>— Carlos Rodríguez, director de instituto</strong></p>
+            </div>
+            <div class="testimonio-card">
+                <p><em>"Los talleres son prácticos, inspiradores y directamente aplicables. He visto resultados inmediatos en mi aula."</em></p>
+                <p><strong>— Laura Fernández, profesora de secundaria</strong></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="form-contacto">
+                <form action="https://formsubmit.co/tuemail@ejemplo.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+                    <textarea name="mensaje" placeholder="¿En qué puedo ayudarte?" rows="5" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <h3>María García - Formación & Coaching Educativo</h3>
+            
+            <div class="redes-sociales">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+            <div class="enlaces-footer">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#sobre-mi">Sobre Mí</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Aviso Legal</a>
+            </div>
+            
+            <div class="info-contacto">
+                <p>📧 info@mariagarciaeducacion.com</p>
+                <p>📞 +34 612 345 678</p>
+                <p>📍 Madrid, España</p>
+            </div>
+            
+            <p>&copy; 2024 María García. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+    
+    <!-- JavaScript para el menú suave -->
     <script>
-        // Script para el menú móvil
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Cierra el menú móvil al hacer clic en un enlace
-        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
-        for (let i = 0; i < mobileMenuLinks.length; i++) {
-            mobileMenuLinks[i].addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
-        }
+        });
     </script>
 </body>
 </html>
